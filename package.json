@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-promise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Eslint config for development.",
   "repository": "https://github.com/xutou12/eslint-config-promise.git",
   "keywords": [
@@ -14,10 +14,6 @@
   "bugs": {
     "url": "https://github.com/xutou12/eslint-config-promise/issues"
   },
-  "files": [
-    "src",
-    "lib"
-  ],
   "dependencies": {
     "eslint-config-airbnb": "^13.0.0"
   },
