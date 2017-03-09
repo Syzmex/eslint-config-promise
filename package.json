@@ -1,0 +1,24 @@
+{
+  "name": "eslint-config-promise",
+  "version": "1.0.0",
+  "description": "Eslint config for development.",
+  "repository": "https://github.com/xutou12/eslint-config-promise.git",
+  "keywords": [
+    "eslint"
+  ],
+  "authors": [
+    "xutou12 <25213322@qq.com> (https://github.com/xutou12)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xutou12/eslint-config-promise/issues"
+  },
+  "files": [
+    "src",
+    "lib"
+  ],
+  "dependencies": {
+    "eslint-config-airbnb": "^13.0.0"
+  },
+  "devDependencies": {}
+}
