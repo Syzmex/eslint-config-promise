@@ -9,6 +9,7 @@
   "authors": [
     "xutou12 <25213322@qq.com> (https://github.com/xutou12)"
   ],
+  "main": "./index.js",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/xutou12/eslint-config-promise/issues"
