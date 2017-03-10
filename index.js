@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['eslint-config-airbnb'].map(require.resolve),
+  extends: ['eslint-config-airbnb'].map( require.resolve ),
   env: {
     browser: true,
     jasmine: true,
@@ -14,57 +14,90 @@ module.exports = {
     }
   },
   plugins: [
-    'eslint-plugin-markdown',
-    'eslint-plugin-import',
-    'eslint-plugin-react',
-    'eslint-plugin-jsx-a11y'
-  ].map(require.resolve),
+    'import',
+    'react',
+    'jsx-a11y'
+  ],
+  /* eslint-disable */
   rules: {
     // use double quotes for copy friendly
+    "max-len": [0],
     "func-names": [0],
-    "semi": [2, "always"],
-    "comma-dangle": [2, "never"],
-    "space-in-parens": [2, "always", {
-      "exceptions": ["{}", "[]", "()", "empty"]
+    "semi": [ 2, "always" ],
+    "eol-last": [ 2, "always" ],
+    "comma-dangle": [ 2, "never" ],
+    "camelcase": [ 2, { properties: "never" }],
+    "space-in-parens": [ 2, "always", {
+      "exceptions": [ "{}", "[]", "()", "empty" ]
     }],
-    "object-curly-spacing": [2, "always", {
+    "object-shorthand": [ 2, "always", {
+      "avoidQuotes": true,
+      "avoidExplicitReturnArrows": true
+    }],
+    "object-curly-spacing": [ 2, "always", {
       "arraysInObjects": false,
       "objectsInObjects": false
     }],
+    "array-bracket-spacing": [ 2, "always", {
+      "arraysInArrays": false,
+      "objectsInArrays": false,
+      "singleValue": false
+    }],
     "prefer-arrow-callback": [2],
-    "arrow-parens": [2, "as-needed"],
-    "arrow-body-style": [2, "as-needed"],
-    "space-before-function-paren": [2, {
+    "arrow-parens": [ 2, "as-needed" ],
+    "arrow-body-style": [ 2, "as-needed" ],
+    "space-before-function-paren": [ 2, {
       "named": "never",
       "anonymous": "always",
       "asyncArrow": "ignore"
     }],
-    "consistent-return": [2, {
+    "consistent-return": [ 2, {
       "treatUndefinedAsUnspecified": false
     }],
-    "no-plusplus": [2, {
+    "no-plusplus": [ 2, {
       "allowForLoopAfterthoughts": true
     }],
-    "no-unused-vars": [2, {
+    "no-unused-vars": [ 2, {
       "args": "all",
       "caughtErrors": "none",
       "argsIgnorePattern": "^_|_$"
     }],
     "no-underscore-dangle": [0],
     "padded-blocks": [0],
-    "import/newline-after-import": [0],
-    "no-mixed-operators": [2, {
+    "no-mixed-operators": [ 2, {
       "allowSamePrecedence": true
     }],
-    "react/jsx-filename-extension": [1, {
-      "extensions": [".js", ".jsx"]
-    }],
-    "import/extensions": [0],
-    "react/prop-types": [0],
-    "react/prefer-stateless-function": [0],
     "no-nested-ternary": [0],
     "no-bitwise": [0],
     "require-yield": [1],
-    "jsx-a11y/no-static-element-interactions": [0]
+
+    // plugins
+    "import/extensions": [0],
+    "import/newline-after-import": [0],
+    "jsx-a11y/no-static-element-interactions": [0],
+
+    // react rules
+    "react/jsx-filename-extension": [ 1, {
+      "extensions": [ ".js", ".jsx" ]
+    }],
+    "react/prefer-stateless-function": [0],
+    "react/prop-types": [0],
+    'react/jsx-closing-bracket-location': [ 1, {
+      selfClosing: 'after-props',
+      nonEmpty: 'after-props'
+    }],
+    "react/sort-comp": [ 1, {
+      "order": [
+        "static-methods",
+        "lifecycle",
+        "/^handle.+$/",
+        "everything-else",
+        "rendering"
+      ],
+      "groups": {
+        "rendering": [ "/^render.+$/", "render" ]
+      }
+    }]
   }
+  /* eslint-disable */
 };
