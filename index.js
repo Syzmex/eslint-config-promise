@@ -22,8 +22,10 @@ module.exports = {
   rules: {
     // use double quotes for copy friendly
     "max-len": [0],
+    "no-shadow": [0],
     "func-names": [0],
     "semi": [ 2, "always" ],
+    "no-param-reassign": [0],
     "eol-last": [ 2, "always" ],
     "comma-dangle": [ 2, "never" ],
     "camelcase": [ 2, { properties: "never" }],
@@ -54,9 +56,7 @@ module.exports = {
     "consistent-return": [ 2, {
       "treatUndefinedAsUnspecified": false
     }],
-    "no-plusplus": [ 2, {
-      "allowForLoopAfterthoughts": true
-    }],
+    "no-plusplus": [0],
     "no-unused-vars": [ 2, {
       "args": "all",
       "caughtErrors": "none",
