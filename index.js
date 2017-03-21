@@ -28,7 +28,7 @@ module.exports = {
     "no-param-reassign": [0],
     "eol-last": [ 2, "always" ],
     "comma-dangle": [ 2, "never" ],
-    "camelcase": [ 2, { properties: "never" }],
+    "camelcase": [ 2, { "properties": "never" }],
     "space-in-parens": [ 2, "always", {
       "exceptions": [ "{}", "[]", "()", "empty" ]
     }],
@@ -47,7 +47,7 @@ module.exports = {
     }],
     "prefer-arrow-callback": [2],
     "arrow-parens": [ 2, "as-needed" ],
-    "arrow-body-style": [ 2, "as-needed" ],
+    "arrow-body-style": [0],
     "space-before-function-paren": [ 2, {
       "named": "never",
       "anonymous": "always",
@@ -64,33 +64,36 @@ module.exports = {
     }],
     "no-underscore-dangle": [0],
     "padded-blocks": [0],
-    "no-mixed-operators": [ 2, {
+    "no-mixed-operators": [ 1, {
       "allowSamePrecedence": true
     }],
     "no-nested-ternary": [0],
     "no-bitwise": [0],
     "require-yield": [1],
+    "class-methods-use-this": [0],
 
     // plugins
     "import/extensions": [0],
     "import/newline-after-import": [0],
     "jsx-a11y/no-static-element-interactions": [0],
+    "jsx-a11y/label-has-for": [0],
 
     // react rules
+    "react/jsx-first-prop-new-line": [0],
     "react/jsx-filename-extension": [ 1, {
       "extensions": [ ".js", ".jsx" ]
     }],
     "react/prefer-stateless-function": [0],
     "react/prop-types": [0],
-    'react/jsx-closing-bracket-location': [ 1, {
-      selfClosing: 'after-props',
-      nonEmpty: 'after-props'
+    "react/jsx-closing-bracket-location": [ 1, {
+      "selfClosing": "after-props",
+      "nonEmpty": "after-props"
     }],
     "react/sort-comp": [ 1, {
       "order": [
         "static-methods",
         "lifecycle",
-        "/^handle.+$/",
+        "/^(handle|on).+$/",
         "everything-else",
         "rendering"
       ],
