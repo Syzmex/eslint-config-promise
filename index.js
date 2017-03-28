@@ -46,15 +46,15 @@ module.exports = {
       "singleValue": false
     }],
     "prefer-arrow-callback": [2],
-    "arrow-parens": [ 2, "as-needed" ],
+    "arrow-parens": [0],
     "arrow-body-style": [0],
     "space-before-function-paren": [ 2, {
       "named": "never",
-      "anonymous": "always",
+      "anonymous": "never",
       "asyncArrow": "ignore"
     }],
     "consistent-return": [ 2, {
-      "treatUndefinedAsUnspecified": false
+      "treatUndefinedAsUnspecified": true
     }],
     "no-plusplus": [0],
     "no-unused-vars": [ 2, {
