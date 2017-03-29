@@ -79,12 +79,13 @@ module.exports = {
     "jsx-a11y/label-has-for": [0],
 
     // react rules
+    "react/prop-types": [0],
+    "react/no-mutli-comp": [0],
     "react/jsx-first-prop-new-line": [0],
     "react/jsx-filename-extension": [ 1, {
       "extensions": [ ".js", ".jsx" ]
     }],
     "react/prefer-stateless-function": [0],
-    "react/prop-types": [0],
     "react/jsx-closing-bracket-location": [ 1, {
       "selfClosing": "after-props",
       "nonEmpty": "after-props"
