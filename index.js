@@ -24,6 +24,7 @@ module.exports = {
     "max-len": [0],
     "no-shadow": [0],
     "func-names": [0],
+    "global-require": [0],
     "semi": [ 2, "always" ],
     "no-param-reassign": [0],
     "eol-last": [ 2, "always" ],
@@ -80,7 +81,7 @@ module.exports = {
 
     // react rules
     "react/prop-types": [0],
-    "react/no-mutli-comp": [0],
+    "react/no-multi-comp": [0],
     "react/jsx-first-prop-new-line": [0],
     "react/jsx-filename-extension": [ 1, {
       "extensions": [ ".js", ".jsx" ]
