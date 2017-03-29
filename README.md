@@ -36,6 +36,7 @@
 | 0 | `import` 后不强制加空行 | [eslint-plugin-import/newline-after-import](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md) |
 | 0 | 静态标签可以添加交互事件 | [eslint-plugin-jsx-a11y/no-static-element-interactions](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-static-element-interactions.md) |
 | 0 | 第一个属性不强制换行 | [eslint-plugin-react/jsx-first-prop-new-line](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md) |
+| 0 | 单文件可以写多个组件 | [eslint-plugin-react/no-multi-comp](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md) |
 | 1 | `jsx` `js` 文件中都可以写 `jsx` 语法 |[eslint-plugin-react/jsx-filename-extension](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md)|
 | 0 | 组件可以不带 `state` | [eslint-plugin-react/prefer-stateless-function](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md) |
 | 0 | 不强制写 `propTypes` | [eslint-plugin-react/prop-types](https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md) |
