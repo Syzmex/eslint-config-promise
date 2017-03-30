@@ -28,10 +28,10 @@
 | 0 | 代码块中首尾不强制空行 | [require or disallow padding within blocks (padded-blocks)](http://eslint.org/docs/rules/padded-blocks) |
 | 1 | 多种优先级的运算符混合加括号，同级可不加 | [Disallow mixes of different operators (no-mixed-operators)](http://eslint.org/docs/rules/no-mixed-operators) |
 | 0 | 三元运算可以嵌套使用 | [disallow nested ternary expressions (no-nested-ternary)](http://eslint.org/docs/rules/no-nested-ternary) |
-| 0 | 三元运算可以嵌套使用 | [disallow nested ternary expressions (no-nested-ternary)](http://eslint.org/docs/rules/no-nested-ternary) |
 | 0 | 允许位运算符 | [disallow bitwise operators (no-bitwise)](http://eslint.org/docs/rules/no-bitwise) |
 | 1 | 异步函数中必须有 `yield` | [Disallow generator functions that do not have yield (require-yield)](http://eslint.org/docs/rules/require-yield) |
 | 0 | 类函数中可以不使用 `this` | [Enforce that class methods utilize this (class-methods-use-this)](http://eslint.org/docs/rules/class-methods-use-this) |
+| 2 | 允许无返回表达式 | [Disallow Unused Expressions (no-unused-expressions)](http://eslint.org/docs/rules/no-unused-expressions) |
 | 0 | 引入文件不强制加后缀名 | [eslint-plugin-import/extensions](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md)|
 | 0 | `import` 后不强制加空行 | [eslint-plugin-import/newline-after-import](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md) |
 | 0 | 静态标签可以添加交互事件 | [eslint-plugin-jsx-a11y/no-static-element-interactions](https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-static-element-interactions.md) |
