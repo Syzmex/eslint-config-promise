@@ -28,11 +28,7 @@ module.exports = {
     "semi": [ 2, "always" ],
     "no-param-reassign": [0],
     "eol-last": [ 2, "always" ],
-    "no-unused-expressions": [2, {
-      "allowTaggedTemplates": true,
-      "allowShortCircuit": true,
-      "allowTernary": true
-    }],
+    "no-unused-expressions": [0],
     "comma-dangle": [ 2, "never" ],
     "camelcase": [ 2, { "properties": "never" }],
     "space-in-parens": [ 2, "always", {
@@ -81,6 +77,7 @@ module.exports = {
     // plugins
     "import/extensions": [0],
     "import/newline-after-import": [0],
+    "import/prefer-default-export": [0],
     "jsx-a11y/no-static-element-interactions": [0],
     "jsx-a11y/label-has-for": [0],
 
