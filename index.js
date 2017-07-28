@@ -27,6 +27,7 @@ module.exports = {
     "global-require": [0],
     "semi": [ 2, "always" ],
     "no-param-reassign": [0],
+    "no-mixed-operators": [0],
     "eol-last": [ 2, "always" ],
     "no-unused-expressions": [0],
     "comma-dangle": [ 2, "never" ],
