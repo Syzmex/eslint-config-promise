@@ -67,9 +67,6 @@ module.exports = {
     }],
     "no-underscore-dangle": [0],
     "padded-blocks": [0],
-    "no-mixed-operators": [ 1, {
-      "allowSamePrecedence": true
-    }],
     "no-nested-ternary": [0],
     "no-bitwise": [0],
     "require-yield": [1],
