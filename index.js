@@ -24,14 +24,18 @@ module.exports = {
     "max-len": [0],
     "no-shadow": [0],
     "func-names": [0],
+    "brace-style": [0],
     "global-require": [0],
     "semi": [ 2, "always" ],
     "no-param-reassign": [0],
     "no-mixed-operators": [0],
+    "prefer-destructuring": [0],
     "eol-last": [ 2, "always" ],
+    "no-restricted-globals": [0],
     "no-unused-expressions": [0],
     "comma-dangle": [ 2, "never" ],
     "camelcase": [ 2, { "properties": "never" }],
+    "object-curly-newline": [0],
     "space-in-parens": [ 2, "always", {
       "exceptions": [ "{}", "[]", "()", "empty" ]
     }],
@@ -81,11 +85,13 @@ module.exports = {
     }],
     "jsx-a11y/no-static-element-interactions": [0],
     "jsx-a11y/label-has-for": [0],
+    "jsx-a11y/anchor-is-valid": [0],
 
     // react rules
     "react/prop-types": [0],
     "react/no-multi-comp": [0],
     "react/no-find-dom-node": [0],
+    "react/jsx-max-props-per-line": [0],
     "react/jsx-first-prop-new-line": [0],
     "react/jsx-filename-extension": [ 1, {
       "extensions": [ ".js", ".jsx" ]
