@@ -9,8 +9,12 @@ module.exports = {
     es6: true
   },
   parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module',
     ecmaFeatures: {
-      experimentalObjectRestSpread: true
+      jsx: true,
+      experimentalObjectRestSpread: true,
+      objectLiteralDuplicateProperties: false
     }
   },
   plugins: [
@@ -92,6 +96,7 @@ module.exports = {
     "react/prop-types": [0],
     "react/no-multi-comp": [0],
     "react/no-find-dom-node": [0],
+    "react/react-in-jsx-scope": [0],
     "react/jsx-max-props-per-line": [0],
     "react/jsx-first-prop-new-line": [0],
     "react/jsx-filename-extension": [ 1, {
