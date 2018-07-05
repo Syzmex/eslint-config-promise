@@ -1,5 +1,10 @@
 module.exports = {
-  extends: ['eslint-config-airbnb'].map( require.resolve ),
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  // extends: ['eslint-config-airbnb'].map( require.resolve ),
   env: {
     browser: true,
     jasmine: true,

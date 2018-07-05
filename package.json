@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-promise",
-  "version": "1.2.4",
+  "version": "1.2.6",
   "description": "Eslint config for development.",
   "repository": "https://github.com/xutou12/eslint-config-promise.git",
   "keywords": [
@@ -19,7 +19,6 @@
   "devDependencies": {},
   "peerDependencies": {
     "eslint": "*",
-    "eslint-config-airbnb": "*",
     "eslint-plugin-jsx-a11y": "*",
     "eslint-plugin-import": "*",
     "eslint-plugin-react": "*"
