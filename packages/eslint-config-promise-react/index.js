@@ -34,6 +34,8 @@ module.exports = {
       "extensions": [ ".js", ".jsx" ]
     }],
     "react/prefer-stateless-function": [0],
+    "react/destructuring-assignment": [0],
+    "react/no-access-state-in-setstate": [0],
     "react/jsx-closing-bracket-location": [ 1, {
       "selfClosing": "after-props",
       "nonEmpty": "after-props"
