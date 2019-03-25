@@ -1,9 +1,8 @@
 module.exports = {
-  extends: [
+  extends: ['eslint-config-promise'].map( require.resolve ).concat([
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended"
-  ],
-  extends: ['eslint-config-promise'].map( require.resolve ),
+  ]),
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',

@@ -7,6 +7,9 @@
     "eslint",
     "config"
   ],
+  "files": [
+    "index.js"
+  ],
   "authors": [
     "xutou12 <25213322@qq.com> (https://github.com/xutou12)"
   ],
