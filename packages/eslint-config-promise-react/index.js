@@ -24,9 +24,11 @@ module.exports = {
 
     // react rules
     "react/prop-types": [0],
+    "react/display-name": [0],
     "react/no-multi-comp": [0],
     "react/no-find-dom-node": [0],
     "react/react-in-jsx-scope": [0],
+    "react/jsx-no-target-blank": [0],
     "react/jsx-max-props-per-line": [0],
     "react/jsx-first-prop-new-line": [0],
     "react/jsx-filename-extension": [ 1, {

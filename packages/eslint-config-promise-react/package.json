@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-promise-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Promise React 语法约定",
   "keywords": [
     "promise",

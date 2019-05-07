@@ -26,6 +26,7 @@ module.exports = {
     "max-len": [0],
     "no-shadow": [0],
     "func-names": [0],
+    "no-console": [0],
     "brace-style": [0],
     "global-require": [0],
     "semi": [ 2, "always" ],
@@ -54,7 +55,8 @@ module.exports = {
       "objectsInArrays": false,
       "singleValue": false
     }],
-    "prefer-arrow-callback": [2],
+    "prefer-arrow-callback": [0],
+    // "prefer-arrow-callback": [2],
     "arrow-parens": [0],
     "arrow-body-style": [0],
     "space-before-function-paren": [ 2, {
@@ -62,9 +64,10 @@ module.exports = {
       "anonymous": "never",
       "asyncArrow": "ignore"
     }],
-    "consistent-return": [ 2, {
-      "treatUndefinedAsUnspecified": true
-    }],
+    "consistent-return": [0],
+    // "consistent-return": [ 2, {
+    //   "treatUndefinedAsUnspecified": true
+    // }],
     "no-plusplus": [0],
     "no-unused-vars": [ 2, {
       "args": "all",
