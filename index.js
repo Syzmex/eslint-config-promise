@@ -1,10 +1,7 @@
 module.exports = {
   extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended"
+    "eslint:recommended"
   ],
-  // extends: ['eslint-config-airbnb'].map( require.resolve ),
   env: {
     browser: true,
     jasmine: true,
@@ -14,18 +11,14 @@ module.exports = {
     es6: true
   },
   parserOptions: {
-    ecmaVersion: 6,
+    ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true,
-      experimentalObjectRestSpread: true,
       objectLiteralDuplicateProperties: false
     }
   },
   plugins: [
-    'import',
-    'react',
-    'jsx-a11y'
+    'import'
   ],
   /* eslint-disable */
   rules: {
@@ -33,6 +26,7 @@ module.exports = {
     "max-len": [0],
     "no-shadow": [0],
     "func-names": [0],
+    "no-console": [0],
     "brace-style": [0],
     "global-require": [0],
     "semi": [ 2, "always" ],
@@ -61,7 +55,8 @@ module.exports = {
       "objectsInArrays": false,
       "singleValue": false
     }],
-    "prefer-arrow-callback": [2],
+    "prefer-arrow-callback": [0],
+    // "prefer-arrow-callback": [2],
     "arrow-parens": [0],
     "arrow-body-style": [0],
     "space-before-function-paren": [ 2, {
@@ -69,9 +64,10 @@ module.exports = {
       "anonymous": "never",
       "asyncArrow": "ignore"
     }],
-    "consistent-return": [ 2, {
-      "treatUndefinedAsUnspecified": true
-    }],
+    "consistent-return": [0],
+    // "consistent-return": [ 2, {
+    //   "treatUndefinedAsUnspecified": true
+    // }],
     "no-plusplus": [0],
     "no-unused-vars": [ 2, {
       "args": "all",
@@ -91,38 +87,6 @@ module.exports = {
     "import/prefer-default-export": [0],
     "import/no-extraneous-dependencies": [ "error", {
       "devDependencies": ["**/!(src)/*"]
-    }],
-    "jsx-a11y/no-static-element-interactions": [0],
-    "jsx-a11y/label-has-for": [0],
-    "jsx-a11y/anchor-is-valid": [0],
-    "jsx-a11y/click-events-have-key-events": [0],
-
-    // react rules
-    "react/prop-types": [0],
-    "react/no-multi-comp": [0],
-    "react/no-find-dom-node": [0],
-    "react/react-in-jsx-scope": [0],
-    "react/jsx-max-props-per-line": [0],
-    "react/jsx-first-prop-new-line": [0],
-    "react/jsx-filename-extension": [ 1, {
-      "extensions": [ ".js", ".jsx" ]
-    }],
-    "react/prefer-stateless-function": [0],
-    "react/jsx-closing-bracket-location": [ 1, {
-      "selfClosing": "after-props",
-      "nonEmpty": "after-props"
-    }],
-    "react/sort-comp": [ 1, {
-      "order": [
-        "static-methods",
-        "lifecycle",
-        "/^(handle|on).+$/",
-        "everything-else",
-        "rendering"
-      ],
-      "groups": {
-        "rendering": [ "/^render.+$/", "render" ]
-      }
     }]
   }
   /* eslint-disable */
